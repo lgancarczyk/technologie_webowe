@@ -1,8 +1,15 @@
 #calosc{
-    background-color: lightblue;
+    background-color: rgb(200, 232, 243);
     width: 50%;
     padding: 20px;
+    margin: auto;
 }
 #naglowek{
-
+    text-align: center;
+    background-color: rgb(167, 214, 230);
+}
+#miesko{
+    width: 50%;
+    background-color: lightcoral;
+    
 }
