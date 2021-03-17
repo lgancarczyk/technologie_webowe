@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main{
+    width: 1000px;
+}
+
+#header{
+    display: flex;
+}
+
+#header header-links{
+    display: flex;
+    justify-content: ;
+}
+
+#header-links a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header-bar{
+    height: 5px;
+    background-color: #201e1e;
+}
+
+#columns{
+    display: flex;
+}
