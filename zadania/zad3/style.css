@@ -1,30 +1,46 @@
 body {
-    background: #ccc;
+    
+    background-image: url('layer51/tlo.png');
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color:#142127;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+#main{
+    margin: 20px 200px;
+    position: flex;
+    
+    width: 460px;
+
 
 }
+
 #logo {
     display: flex;
     flex-direction: column;
     font-size:9px;
     align-items: center;
-    background-color:blue;
+    
 }
 #logo p{
     display: flex;
     font-size:9px;
     align-items: center;
-    background-color:rgb(101, 101, 224);
-    margin: 0;
+    color:#adb5bd;
+    font-family: 'Roboto', sans-serif;
+    
+    margin:0;
 }
 
 #zdjecia {
     
     background-color: #fff;
-    padding: 8px;
+    padding:8px;
     margin-top: 30px;
 }
 
@@ -33,4 +49,61 @@ body {
     border-width:thin;
     border-color:rgb(221, 221, 221);
     margin: 3px;
+}
+
+
+
+#opis{
+   
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+    align-items: center;
+    width: 100%;
+    color: #adb5bd;
+    font:'arial';
+    
+    
+    
+}
+
+.tytul_opisu{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    
+    
+}
+hr{
+    width:460px;
+   color:black;
+   border-top: solid;
+}
+.text{
+    text-align: justify;
+    font: 'arial';
+    border-top: 1px solid rgb(110, 110, 110);
+    padding-top:20px;
+   
+}
+#mail_div{
+    display: flex;
+    flex-direction: column;
+    font-size:9px;
+    align-items: center;
+    margin-top:20px;
+}
+#stopka{
+    font-size: 0.8em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color:#818181;
+}
+
+.link_kropki{
+    text-decoration: none;
+    color:#adb5bd;
+    border-bottom: 1px dotted;
 }
