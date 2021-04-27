@@ -25,9 +25,9 @@ p{
     color: #2179e6;
     margin-top:5px 0 5px;
 }
+
 #rest_of_menu{
     align-items: left;
-    visibility: none;
     height:0;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,10 @@ p{
     text-decoration: none;
     color: #fff;
 }
+#menu_button:focus{
+    outline: none;
+    border: none;
+}
 
 #menu_button:focus-within + #rest_of_menu{
     
@@ -62,8 +66,9 @@ p{
     height: auto;
     padding-top: 10px;
     padding-bottom: 30px;
-    animation-duration: 2s;
+    
 }
+
 #main{
     
 }
@@ -99,6 +104,7 @@ padding-left: 5px;
     grid-template-columns: 54% auto;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(212, 212, 212);
+    justify-content: space-between;
 }
 #big_post_header_text{
     display: flex;
@@ -120,6 +126,7 @@ padding-left: 5px;
     color:rgb(123, 158, 255);
 }
 #big_post_buttons{
+    
     display: grid;
     grid-template-columns: 0fr 0fr;
     grid-template-rows: 0fr 0fr;
@@ -145,4 +152,37 @@ padding-left: 5px;
     padding: 20px
 }
 
+@media screen and (min-width:640px){
+    body{
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "grid_menu grid_rest"
+        
+    }
+    #menu_button{
+        visibility: hidden;
+    }
+    #main{
+        grid-area: grid_rest;
+        display: grid;
+        grid-template-rows: 0.3fr 0.7fr;
+        grid-template-areas: 
+        "grid_posts"
+        "grid_big_post";
+    }
+    #rest_of_menu{
+        grid-area: grid_menu;
+        height: auto;
+        width: 200px;
+    }
+    #posts{
+        grid-area: grid_posts;
+        overflow: scroll;
 
+    }
+    #big_post{
+        grid-area: grid_big_post;
+        overflow: scroll;
+    }
+}
