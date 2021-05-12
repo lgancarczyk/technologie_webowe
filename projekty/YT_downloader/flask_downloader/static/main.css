@@ -1,0 +1,27 @@
+body{
+margin: 0;
+}
+#menu {
+    width: 100vw;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    
+
+}
+#logo{
+    width: auto;
+    height: auto;
+}
+#logo img{
+    width: 50vw;
+}
+#main{
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    width: 100vw;
+}
+.changing_content{
+    margin: auto;
+    width: 90vw;
+    height: 100px;
+    background-color: bisque;
+}
