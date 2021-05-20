@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    
+}
+/* #side_bar{
+    position: absolute;
+    background-image: url(rick.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    width: 450px;
+} */
+#go_back{
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background-color: #FFDA46;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+}
+#go_back:hover{
+    background-color: #e6c74f;
+}
+#page_glowa{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("image.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+}
+#show_me{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    width: 250px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background-color: #FFDA46;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-right: 200px;
+}
+#show_me:hover{
+    background-color: #ffd118;
+}
+
+.make_small{
+    animation: make_small 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes make_small {
+    100% {transform: scale(0.9);}
+}
+.make_big{
+    animation: make_big 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes make_big {
+    0% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+}
+
+.show_side{
+    animation: show_side 0.3s ease-in-out;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;
+    
+    
+}
+@keyframes show_side {
+    0% {transform:scaleX(0);}
+    100% {transform: scaleX(1);}
+}
+
+.side_bar{
+    position: fixed;
+    left: 0;
+    background-image: url(rick.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    width: 450px;
+    z-index: 1;
+    box-shadow: 0 0 0.5em rgb(255, 255, 255);
+    
+       
+}
+.hide_side{
+    animation: hide_side 0.3s ease-in-out;
+    transform-origin: 0% 100%;
+    animation-fill-mode: forwards;
+}
+@keyframes hide_side {
+    0% {transform: scaleX(1);}
+    100% {transform: scaleX(0);}
+}
+.hide_side_bar{
+    transform: scaleX(0);
+}
+
+

@@ -1,0 +1,112 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #5B6775;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: #4e5258;
+    
+}
+
+#main{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    background-color: aqua;
+    background-color: #5B6775;
+}
+#cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+}
+.upper_card_part{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F7F8;
+    padding: 0 10px 0 10px;
+    
+    
+}
+.price_div{
+    display: flex;
+    background-color: #C1D5D4;
+    width: 100%;
+    justify-content: center;
+}
+.card h3{
+    border-bottom: 1px solid rgb(212, 212, 212);
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    list-style-type: square;
+    font-size: 0.9rem;
+    
+}
+.przycisk{
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    height: 30px;
+    color: #fff;
+    background-color: #AF7074;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    margin-top:5px;
+}
+#button_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.happy_sushi{
+    transform: scale(0.9) translateX(+25px);
+}
+.sushi_lover{
+    transform: scale(1.1) translateX(-25px);
+}
+
+
+.lover_to_back{
+    position: relative;
+    animation: rotate 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    50% {transform: scale(1) translateX(+25px) translateZ(-10px);}
+    100% {transform: scale(0.9) translateX(-25px) translateZ(-10px);}
+}
+.happy_to_front{
+    position: relative;
+    animation: rotate1 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate1 {
+    50% {transform: scale(1) translateX(-25px) translateZ(10px);}
+    100% {transform: scale(1.1) translateX(+25px) translateZ(10px);}
+}
+.lover_to_front{
+    position: relative;
+    animation: rotate2 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate2 {
+    50% {transform: scale(1) translateX(+25px) translateZ(+10px);}
+    100% {transform: scale(1.1) translateX(-25px) translateZ(+10px);}
+}
+.happy_to_back{
+    position: relative;
+    animation: rotate3 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate3 {
+    50% {transform: scale(1) translateX(-25px) translateZ(-10px);}
+    100% {transform: scale(0.9) translateX(+25px) translateZ(-10px);}
+}

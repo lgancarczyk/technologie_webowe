@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side_bar hide_side_bar">
+        <button id="go_back">Go Back Morty!</button>
+    </div>
+    <div id="page_glowa">
+        <button id="show_me">
+            Show Me What You Got!
+        </button>
+    </div>
+    <script type="text/javascript">
+        const show_me = document.querySelector('#show_me');
+        const go_back = document.querySelector('#go_back');
+
+        const side_bar = document.querySelector('.side_bar');
+        const page_glowa = document.querySelector('#page_glowa');
+
+        show_me.addEventListener('click',() => {
+            page_glowa.classList.remove('make_big');
+            page_glowa.classList.add('make_small');
+
+
+            side_bar.classList.remove('hide_side_bar')
+            side_bar.classList.remove('hide_side')
+            side_bar.classList.add('show_side')
+        })
+        go_back.addEventListener('click',() => {
+            page_glowa.classList.remove('make_small');
+            page_glowa.classList.add('make_big');
+
+            side_bar.classList.remove('show_side')
+            side_bar.classList.add('hide_side')
+        })
+    </script>
+</body>
+</html>
