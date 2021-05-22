@@ -1,19 +1,73 @@
+
 body{
-margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#pasek_gora{
+    height: 5px;
+    background-color: black;
+    width: 100vw;
 }
 #menu {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     border-bottom: 1px solid rgb(212, 212, 212);
-    
-
 }
 #logo{
     width: auto;
     height: auto;
 }
 #logo img{
-    width: 50vw;
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
 }
+#upper_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#hamburger_icon{
+    display: flex;
+    width: 50px;
+    background-image: url(images/hamburgermenu.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+#my_links_id{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 224, 224);
+}
+.my_links_closed{
+    height: 0;
+  transition: height 0.4s;
+
+}
+.my_links_open{
+    visibility: visible;
+    /* Spytaj się na zajęciach co dlaczego nie działa z max content, gdzie ejstbładnie  */
+    height:90px;  
+    transition: height 0.4s;
+    padding-bottom: 5px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    color: black;
+}
+
 #main{
     background-color: rgb(240, 240, 240);
     height: 100vh;
@@ -22,6 +76,56 @@ margin: 0;
 .changing_content{
     margin: auto;
     width: 90vw;
-    height: 100px;
+    height: 100vh;
     background-color: bisque;
+}
+#link_and_submit_div{
+    
+}
+.form_class{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#find_btn{
+    display: flex;
+    border: none;
+    width: 100px;
+    font-size: 1.3rem;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: auto;
+    border-radius: 100px;
+    margin-top: 20px;
+
+}
+#find_btn:hover{
+    background-color: rgb(119, 119, 119);
+}
+.form_field{
+    width: 100%;
+    
+}
+.link_field{
+    width: 15%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: bisque;
+    background-image: url(images/searchicon.png);
+    background-size: 23px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 40px;
+    transition: width 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.link_field:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 70vw;
+    transition: width 0.4s;
+    transition-timing-function: ease-in-out;
+    
 }
