@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header_class">
+        <div class="logo_with_links_and_hamburger_class">
+            <a href="#"><img src="images/logo@2x.png" alt="Selfy"></a>
+            <button class="hamburger_button" ></button>
+            <div class="links_in_menu">
+                <!-- tutaj leca zakladki -->
+            </div>
+        </div>
+        <div class="nav_menu_mobile nav_menu_mobile_closed">
+            <a class="link_in_nav_menu_mobile" href="#">Home</a>
+            <a class="link_in_nav_menu_mobile" href="#">About</a>
+            <a class="link_in_nav_menu_mobile" href="#">Styles</a>
+            <a class="link_in_nav_menu_mobile" href="#">Gallery</a>
+            <a class="link_in_nav_menu_mobile" href="#">Blog</a>
+            <a class="link_in_nav_menu_mobile" href="#">Contact</a>
+        </div>
+        <div class="header_you_idiots_text">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger_button = document.querySelector('.hamburger_button');
+        const my_links_id = document.querySelector('.nav_menu_mobile')
+
+        hamburger_button.addEventListener('click',()=>{
+            my_links_id.classList.toggle('nav_menu_mobile_closed')
+            my_links_id.classList.toggle('nav_menu_mobile_open')
+        })
+    </script>
+</body>
+</html>

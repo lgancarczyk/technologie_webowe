@@ -41,6 +41,9 @@ body{
     border: none;
     background-color: rgb(255, 255, 255);
 }
+#hamburger_icon:hover{
+    background-color: rgb(119, 119, 119);
+}
 #my_links_id{
     display: flex;
     flex-direction: column;
@@ -78,6 +81,7 @@ body{
     width: 90vw;
     height: 100vh;
     background-color: bisque;
+    padding-top: 10px;
 }
 #link_and_submit_div{
     
@@ -128,4 +132,24 @@ body{
     transition: width 0.4s;
     transition-timing-function: ease-in-out;
     
+}
+
+.flash_error{
+    color: red;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+#found_thumbnail{
+    display: flex;
+    width: 100%;
+}
+#main_video_desc{
+    font-size: 1rem;
+    font-weight: 500;
+}
+#main_video_desc p{
+    margin-top: 5px;
+    margin-bottom: 0;
 }
