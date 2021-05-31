@@ -1,14 +1,64 @@
+@font-face {
+    font-family: roboto-black;
+    src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: aleo-italic;
+    src: url(fonts/aleo-italic-webfont\ \(1\).woff);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(fonts/roboto-bold-webfont.woff);
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(fonts/roboto-regular-webfont.woff);
+}
+@font-face {
+    font-family: roboto-bold-condensed;
+    src: url(fonts/roboto-boldcondensed-webfont.woff);
+}
+@font-face {
+    font-family: bullets-regular;
+    src: url(fonts/bullets-webfont.woff);
+}
+
+.image_background{
+    display: none;
+}
+
 body{
     display: grid;
+    margin: 0;
     /*  */
-    background-color: rgb(223, 223, 223);
+    background: #f3f4f5;
+    
 }
+
+/* ==========================================================================
+   Header section
+   ========================================================================== */
 .header_class{
+    grid-row:1;
+    grid-column: 2;
     display: grid;
+    padding: 20px 20px 0 20px;    
 }
+#header_home{
+    background-image: url(images/masthead@2x.jpg);
+    background-size:cover ;
+    background-position-x: -350px;
+    
+}
+
+
 .logo_with_links_and_hamburger_class{
     display:flex;
     justify-content:space-between;
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+.logo img{
+    max-width: 131px;
 }
 .hamburger_button{
     width: 60px;
@@ -30,29 +80,235 @@ body{
 .nav_menu_mobile{
     display: flex;
     flex-direction: column;
-    /*  */
-    background-color: snow; 
+    border-bottom: solid 1px rgb(255, 255, 255);
+    
 }
 .nav_menu_mobile_open{
-    animation: show_animation 0.3s ease-in-out;
-    animation-fill-mode: forwards;
-    display: flexbox;
+    animation: show_animation 0.2s ease-in-out;
+    animation-fill-mode:forwards;
+    transform-origin:top;
+    height: 200px;
+    transition: height 0.3s ease-in-out;
 }
 
 @keyframes show_animation {
-    0% {transform:scaleY(0)};
+    0% {transform:scaleY(0);}
     100% {transform:scaleY(1);}
 }
 .nav_menu_mobile_closed{
-    animation: hide_animation 0.3s ease-in-out;
-    animation-fill-mode: forwards;
+    animation: hide_animation 0.2s ease-in-out;
+    animation-fill-mode:forwards;
+    transform-origin:top;
+    /*  */
+    height: 0;
+    transition: height 0.3s ease-in-out;
+    
 }
 @keyframes hide_animation {
-    0% {transform:scaleY(1)};
+    0% {transform:scaleY(1) ;}
     100% {transform:scaleY(0);}
 }
-.link_in_nav_menu_mobile{
+.link_in_nav_menu{
+    display: flex;
+    width: 70px;
     text-decoration: none;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding: 0.3em -0.1em;
+    font-size: 20px;
+    font-family: 'roboto-bold-condensed';
+    color: #2d3438;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+.link_in_nav_menu:hover{
+    background-color: #7b8186;
+    transition: background-color 0.3s;
+    color: #fff;
+}
+.nav_link_active{
+    background-color: #ffc000;
+    color: #fff;
+}
+.header_you_idiots_text{
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+    font-family: 'roboto-regular';
+    padding-bottom: 50px;
+}
+.header_you_idiots_text h1{
+    font-size: 72px;
+    color: white;
+    font-family: roboto-black;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+}
+.header_you_idiots_text h3{
+    color: #e2e2e2;
+    font-family: aleo-italic;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 28px;
+}
+.header_you_idiots_text h5{
+    color: #fff;
+    font-family: roboto-bold;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-size: 24px;
+    margin-top: 0;
+}
+.link_from_text{
+    font-family: roboto-bold;
+    font-weight: normal;
+    color: #3c4a52;
+    text-decoration: none;
+}
+
+.main{
+    display: grid;
+    padding: 0 20px 70px 20px;
+    margin-top: 16px;
+    grid-row: 2;
+    grid-column: 2;
+    grid-gap: 30px;
+    
+}
+
+.title_part_of_main{
+    color: #2d3438;
+    margin: 0;
+    letter-spacing: -1px;
+    font-family: roboto-bold;
+    font-weight: normal;
+    font-size: 36px;
+}
+.title_part_of_main::after{
+    content: ".";
+    font-size: 56px;
+    padding-left: 3px;
+    color: #ffc000;
+}
+.text_part_of_main{
+    margin-top: 0;
+    color: #656a6f;
+    font-family: roboto-regular;
+}
+.arrow::before{
+    content: "g";
+    color: #ffc000;
+    font-family: bullets-regular;
+    font-size: 18px;
+    padding-right: 2px;
+}
+/* ==========================================================================
+   Footer section
+   ========================================================================== */
+.footer{
+    margin:0 20px 0 20px;
+    border-top: solid 1px #cad2d7;
+    padding: 40px 0 136px;
+    grid-row: 3;
+    grid-column: 2;
+
+}
+.logo_links_footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.logo_links_footer a{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.logo_links_footer a img{
+    width: 31px;
+    filter:brightness(2.5);
+}
+.selfy_copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.selfy_copyright a{
+    margin-right: 10px;
+}
+.selfy_copyright a img{
+    max-width: 45px;
+}
+.selfy_copyright p{
+    color: #9fa6aa;
+    font-size: 14px;
+    font-family: roboto-regular;
+}
+@media screen and (min-width:426px){
+    #header_home{
+        
+        background-position-x: -100px;
+    }
+    .header_you_idiots_text{
+        width: 60%;
+    }
+}
+@media screen and (min-width:769px){
+    .header_class{
+        padding-bottom: 100px;
+    }
+    
+    .hamburger_button{
+        display: none;
+    }
+    .links_in_menu{
+        display:flex;
+    }
+    .link_in_nav_menu{
+        display: flex;
+        width: 70px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.3em 0 0.3em;
+    }
+    .nav_menu_mobile{
+        display: none;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        
+    }
+    .footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (min-width:1025px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1025px 1fr ;
+    }
+    #header_home{
+        height: 100vh;
+    }
+    .image_background{
+        display:block;
+        height: 100vh;
+        width:100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .logo_with_links_and_hamburger_class{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    #header_home{
+        background-image: none;
+
+        
+    }
 }
