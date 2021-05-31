@@ -29,6 +29,7 @@
 
 body{
     display: grid;
+    grid-template-columns: 0fr;
     margin: 0;
     /*  */
     background: #f3f4f5;
@@ -55,7 +56,10 @@ body{
 .logo_with_links_and_hamburger_class{
     display:flex;
     justify-content:space-between;
-    border-bottom: solid 1px rgb(255, 255, 255);
+    border-bottom: solid 1px #cad2d7;
+}
+#white_border_bottom{
+    border-bottom: solid 1px rgb(255, 255, 255)
 }
 .logo img{
     max-width: 131px;
@@ -80,7 +84,7 @@ body{
 .nav_menu_mobile{
     display: flex;
     flex-direction: column;
-    border-bottom: solid 1px rgb(255, 255, 255);
+    border-bottom: solid 1px #cad2d7;
     
 }
 .nav_menu_mobile_open{
@@ -166,17 +170,24 @@ body{
     color: #3c4a52;
     text-decoration: none;
 }
-
+/* ==========================================================================
+   Main section
+   ========================================================================== */
+.white_frame{
+    border: solid 6px #fff;
+}
 .main{
     display: grid;
     padding: 0 20px 70px 20px;
     margin-top: 16px;
     grid-row: 2;
     grid-column: 2;
-    grid-gap: 30px;
+    
     
 }
-
+#index_main{
+    grid-gap: 30px;
+}
 .title_part_of_main{
     color: #2d3438;
     margin: 0;
@@ -184,6 +195,8 @@ body{
     font-family: roboto-bold;
     font-weight: normal;
     font-size: 36px;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 .title_part_of_main::after{
     content: ".";
@@ -202,6 +215,43 @@ body{
     font-family: bullets-regular;
     font-size: 18px;
     padding-right: 2px;
+}
+/* About Section */
+#about_japanese_man{
+    width: 100%;
+}
+#about_about_me{
+    font-size: 66px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.headers_lower_text{
+    color: #3c4a52;
+    font-family: aleo-italic;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 24px;
+}
+/* gallery */
+#gallery_main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gallery_images_width{
+    width: 100%;
+}
+.gallery_gap_mobile{
+    display: grid;
+    grid-gap: 30px;
+}
+.gallery_part_of_main{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px #cad2d7;
+}
+#last_gallery_part_of_main{
+    border-bottom:none;
 }
 /* ==========================================================================
    Footer section
@@ -275,15 +325,56 @@ body{
     .nav_menu_mobile{
         display: none;
     }
-    .main{
+    #index_main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         
+    }
+    #about_main_text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    #about_main_text_1_part{
+        grid-column: 1;
+    }
+    about_main_text_2_part{
+        grid-column: 2;
     }
     .footer{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+    .gallery_part_of_main{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-column-gap: 50px;
+        
+    }
+    #gallery_part_of_main_1_image_area{
+        display: grid;
+        grid-template: 
+        'l1 p1'
+        'l2 p2'
+        'l3 p3';
+        grid-gap: 40px;
+    }
+    #gallery_part_of_main_2_image_area{
+        display: grid;
+        grid-template: 
+        'g1 g1'
+        'g1 g1'
+        'l2 p2';
+        grid-gap: 40px;
+    }
+    #big_moc_7_second_gallery_part{
+        grid-area: g1;
+    }
+    #gallery_part_of_main_3_image_area{
+        display: grid;
+        grid-template: 'g'
+                        'd';
     }
     
 }
