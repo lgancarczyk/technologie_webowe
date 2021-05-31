@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header_class">
+        
+
+            <div class="logo_with_links_and_hamburger_class">
+                <a href="index.html" class="logo"><img src="images/logo@2x.png" alt="Selfy"></a>
+                <button class="hamburger_button" ></button>
+                <div class="links_in_menu">
+                    <a class="link_in_nav_menu" href="index.html">Home</a>
+                    <a class="link_in_nav_menu" href="about.html">About</a>
+                    <a class="link_in_nav_menu" href="#">Styles</a>
+                    <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                    <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                    <a class="link_in_nav_menu nav_link_active" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="nav_menu_mobile nav_menu_mobile_closed">
+                <a class="link_in_nav_menu" href="index.html">Home</a>
+                <a class="link_in_nav_menu" href="about.html">About</a>
+                <a class="link_in_nav_menu" href="#">Styles</a>
+                <a class="link_in_nav_menu" href="gallery.html">Gallery</a>
+                <a class="link_in_nav_menu" href="blog.html">Blog</a>
+                <a class="link_in_nav_menu nav_link_active" href="contact.html">Contact</a>
+            </div>
+            
+    </div>
+    <div class="main" id="contact_main">
+        <div class="contact_left_side">
+            <h1 class="title_part_of_main" id="contact_main_title">Contact Me</h1>
+            <p class="headers_lower_text">
+                Praesent commodo cursus magna, venenatis vestibulum.
+                 Donec id elit non mi porta gravida at eget vel scelerisl 
+                 consectetur etsie.
+            </p>
+            <p class="text_part_of_main">
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus 
+                sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                 Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+            <div id="input_div">
+                <input type="email" class="input_field_class" id="name_field" placeholder="What's your name" name="name">
+                <input type="email" class="input_field_class" id="email_field" placeholder="Email goes here" name="email">
+                <input type="text" class="input_field_class" id="text_field" placeholder="Whats this about?" name="text">
+            </div>
+            
+
+
+        </div>
+        <div class="contact_right_side" >
+            <div id="contact_right_side_upper">
+                <h1 class="title_part_of_main">Networks</h1>
+                <p class="text_part_of_main arrow">Follow Me on Facebook</p>
+                <p class="text_part_of_main arrow">Hanging out on Dribbble</p>
+                <p class="text_part_of_main arrow">Tweeting up a storm</p>
+            </div>
+            <div id="contact_right_side_lower">
+                <p class="text_part_of_main">
+                    Vestibulum id ligula porta felis euismod semper. Maecenas 
+                    sed diam eget risus varius blandit sit ametr nulla non metus 
+                    auctor fringilla.
+                </p>
+                <p class="text_part_of_main arrow">See the Full Theme Styles</p>
+            </div>
+
+        </div>
+                    
+        
+    </div>
+    <div class="footer">
+        <div class="logo_links_footer">
+            <a href="#"><img src="images/icon-facebook@2x.png" alt="F"></a>
+            <a href="#"><img src="images/icon-twitter@2x.png" alt="T"></a>
+            <a href="#"><img src="images/icon-linkedin@2x.png" alt="L"></a>
+        </div>
+        <div class="selfy_copyright">
+            <a href="index.html"><img src="images/logo-foot@2x.png" alt="Selfy"></a>
+            <p>© Copyright Selfy 2013</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const hamburger_button = document.querySelector('.hamburger_button');
+        const my_links_id = document.querySelector('.nav_menu_mobile')
+
+        hamburger_button.addEventListener('click',()=>{
+            my_links_id.classList.toggle('nav_menu_mobile_closed')
+            my_links_id.classList.toggle('nav_menu_mobile_open')
+        })
+    </script>
+</body>
+</html>

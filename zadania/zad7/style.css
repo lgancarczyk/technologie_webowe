@@ -22,6 +22,10 @@
     font-family: bullets-regular;
     src: url(fonts/bullets-webfont.woff);
 }
+@font-face {
+    font-family: roboto-light-italic;
+    src: url(fonts/roboto-lightitalic-webfont.woff);
+}
 
 .image_background{
     display: none;
@@ -124,11 +128,11 @@ body{
     font-family: 'roboto-bold-condensed';
     color: #2d3438;
     border-radius: 3px;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s ease-in-out;
 }
 .link_in_nav_menu:hover{
     background-color: #7b8186;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s ease-in-out;
     color: #fff;
 }
 .nav_link_active{
@@ -253,6 +257,55 @@ body{
 #last_gallery_part_of_main{
     border-bottom:none;
 }
+/* blog */
+.yellow_text_under_title{
+    margin-top: -10px;
+    font-size: 14px;
+    font-family: roboto-bold;
+    color: #ffc000
+}
+.blog_title_link_yellow{
+    text-decoration: none;
+    display: flex;
+    
+}
+.blog_title_link_yellow h1{
+    transition: color 0.2s ease-in-out;
+}
+.blog_title_link_yellow h1:hover{
+    color: #ffc000;
+    transition: color 0.2s ease-in-out;
+}
+/* contact */
+#contact_main{
+    display: grid;
+    grid-template-columns:1fr;
+}
+#contact_main_title{
+    font-size: 66px;
+    padding-bottom: 30px;
+}
+
+#contact_right_side_upper{
+    padding-bottom: 20px;
+    border-bottom: dotted 1px #cad2d7
+}
+#contact_right_side_lower{
+    padding-top: 40px;
+}
+#input_div{
+    display: flex;
+    flex-direction: column;
+
+}
+.input_field_class{
+    border: solid 1px #cad2d7;
+    font-family: roboto-light-italic;
+    color: #969ca5;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    padding: 10px 2%;
+}
 /* ==========================================================================
    Footer section
    ========================================================================== */
@@ -262,6 +315,7 @@ body{
     padding: 40px 0 136px;
     grid-row: 3;
     grid-column: 2;
+    font-size: 13px;
 
 }
 .logo_links_footer{
@@ -375,6 +429,13 @@ body{
         display: grid;
         grid-template: 'g'
                         'd';
+    }
+    #contact_main{
+        grid-template-columns: 1fr 30%;
+    }
+    .contact_right_side{
+        padding-left: 40px;
+        border-left: solid 1px #cad2d7;
     }
     
 }
