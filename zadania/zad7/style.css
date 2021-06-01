@@ -284,8 +284,13 @@ body{
 #contact_main_title{
     font-size: 66px;
     padding-bottom: 30px;
+    line-height: 60px;
 }
-
+.contact_left_side{
+    padding-bottom: 20px;
+    border-bottom: solid 1px #cad2d7;
+    margin-bottom: 10px;
+}
 #contact_right_side_upper{
     padding-bottom: 20px;
     border-bottom: dotted 1px #cad2d7
@@ -293,7 +298,7 @@ body{
 #contact_right_side_lower{
     padding-top: 40px;
 }
-#input_div{
+#input_form{
     display: flex;
     flex-direction: column;
 
@@ -301,10 +306,49 @@ body{
 .input_field_class{
     border: solid 1px #cad2d7;
     font-family: roboto-light-italic;
+    font-size: 16px;
     color: #969ca5;
     margin-bottom: 1rem;
     border-radius: 3px;
     padding: 10px 2%;
+}
+#text_field{
+    height: 120px;
+}
+#contact_submit_button{
+    width: 94%;
+    border: none;
+    background-color: #ffc000;
+    color: #fff;
+    font-size: 18px;
+    font-family: roboto-bold;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    padding: .6em 1.2em;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out;
+}
+#contact_submit_button:hover{
+    background-color: #7b8186;
+    transition: background-color 0.2s ease-in-out;
+}
+.black_link{
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+}
+.yellow_hover{
+    text-decoration: none;
+}
+.yellow_hover p{
+    transition: color 0.2s ease-in-out;
+}
+.yellow_hover p:hover{
+    color: #ffc000;
+    transition: color 0.2s ease-in-out;
+}
+/* styles */
+.yellow_highlight{
+    color: #ffc000;
 }
 /* ==========================================================================
    Footer section
@@ -355,6 +399,12 @@ body{
     }
     .header_you_idiots_text{
         width: 60%;
+    }
+    .name_and_email_input{
+        width: 60%;
+    }
+    #contact_submit_button{
+        width: 180px;
     }
 }
 @media screen and (min-width:769px){
@@ -437,8 +487,17 @@ body{
         padding-left: 40px;
         border-left: solid 1px #cad2d7;
     }
+    #text_field{
+        width: 85%;
+        height: 120px;
+        
+    }
+    .contact_left_side{
+        border-bottom: none;
+    }
     
 }
+
 @media screen and (min-width:1025px){
     body{
         display: grid;
