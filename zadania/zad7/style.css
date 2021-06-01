@@ -40,6 +40,32 @@ body{
     
 }
 
+h2{
+    font-size: 36px;
+    font-family: roboto-bold;
+}
+h3{
+    font-size: 28px;
+    font-family: roboto-bold;
+    margin: 10px 0 10px;
+}
+h4{
+    font-size: 24px;
+    font-family: roboto-bold;
+    margin: 10px 0 10px;
+}
+h5{
+    font-size: 24px;
+    color: #ffc000;
+    font-family: roboto-bold;
+    margin: 10px 0 10px;
+}
+h6{
+    font-size: 16px;
+    color: #ffc000;
+    font-family: roboto-bold;
+    margin: 10px 0 10px;
+}
 /* ==========================================================================
    Header section
    ========================================================================== */
@@ -187,7 +213,6 @@ body{
     grid-row: 2;
     grid-column: 2;
     
-    
 }
 #index_main{
     grid-gap: 30px;
@@ -198,7 +223,7 @@ body{
     letter-spacing: -1px;
     font-family: roboto-bold;
     font-weight: normal;
-    font-size: 36px;
+    
     line-height: 30px;
     margin-bottom: 20px;
 }
@@ -241,7 +266,6 @@ body{
     display: grid;
     grid-template-columns: 1fr;
 }
-
 .gallery_images_width{
     width: 100%;
 }
@@ -286,17 +310,23 @@ body{
     padding-bottom: 30px;
     line-height: 60px;
 }
+
 .contact_left_side{
     padding-bottom: 20px;
     border-bottom: solid 1px #cad2d7;
     margin-bottom: 10px;
 }
-#contact_right_side_upper{
+.contact_right_side_upper{
     padding-bottom: 20px;
-    border-bottom: dotted 1px #cad2d7
+    border-bottom: dotted 1px #cad2d7;
+    
 }
-#contact_right_side_lower{
-    padding-top: 40px;
+#style_right_side_upper{
+    border: none;
+    padding-bottom: 0;
+}
+.contact_right_side_lower{
+    padding-top: 30px;
 }
 #input_form{
     display: flex;
@@ -334,7 +364,7 @@ body{
 }
 .black_link{
     font-weight: 600;
-    color: rgb(26, 26, 26);
+    color: #656a6f;
 }
 .yellow_hover{
     text-decoration: none;
@@ -349,6 +379,79 @@ body{
 /* styles */
 .yellow_highlight{
     color: #ffc000;
+}
+#straight_border{
+    padding-top: 30px;
+    border-bottom: 1px solid #cad2d7;
+}
+#dashed_border{
+    padding-top: 30px;
+    border-bottom: 1px dashed #cad2d7;
+}
+#dotted_border{
+    padding-top: 30px;
+    border-bottom: 1px dotted #cad2d7;
+}
+.button_yellow{
+    background-color: #ffc000;
+    border: none;
+    border-radius: 3px;
+    font-family: roboto-bold;
+    font-weight: 600;
+    color: #fff;
+    
+}
+.big_btn{
+    font-size: 18px;
+    padding: 10.8px 21.6px;
+    margin: 9px 0;
+}
+.small_btn{
+    font-size: 14px;
+    padding: 5.6px 12.6px;
+    margin: 7px 0;
+}
+.super_small_btn{
+    font-size: 12px;
+    padding: 2.4px 8.4px;
+    margin: 6px 0;
+}
+.button_in_styles{
+    width: 100%;
+}
+#images_in_styles{
+    padding: 20px 0 20px 0;
+}
+.border_under_part{
+    border-bottom: 1px solid #cad2d7;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.styles_table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.table_headers{
+    position: relative;
+    color: #3c4a52;
+    font-weight: 600;
+    border: 1px solid #cad2d7;
+    text-align: left;
+    font-family: roboto-regular;
+    padding: 8px;
+}
+.table_elements{
+    border: 1px solid #cad2d7;
+    color: #656a6f;
+    text-align: left;
+    padding: 8px;
+    font-family: roboto-regular;
+    font-weight: 400;
+}
+fieldset{
+    border: 1px solid #cad2d7;
+    
 }
 /* ==========================================================================
    Footer section
@@ -406,14 +509,18 @@ body{
     #contact_submit_button{
         width: 180px;
     }
+    .button_in_styles{
+        width: max-content;
+    }
 }
 @media screen and (min-width:769px){
-    .header_class{
-        padding-bottom: 100px;
-    }
+    
     
     .hamburger_button{
         display: none;
+    }
+    .header_class{
+        padding-top: 40px;
     }
     .links_in_menu{
         display:flex;
@@ -483,7 +590,8 @@ body{
     #contact_main{
         grid-template-columns: 1fr 30%;
     }
-    .contact_right_side{
+    
+    #contact_right_side_inside_div{
         padding-left: 40px;
         border-left: solid 1px #cad2d7;
     }
@@ -495,6 +603,114 @@ body{
     .contact_left_side{
         border-bottom: none;
     }
+    #images_in_styles{
+        display: grid;
+        grid-template: 
+            'a a a a a a'
+            'b b b c c c'
+            'd d e e f f';
+            grid-gap: 40px;;
+    }
+    #one_image_in_styles{
+        grid-area: a;
+    }
+    #two_image_in_styles_l{
+        grid-area: b;
+    }
+    #two_image_in_styles_r{
+        grid-area: c;
+    }
+    #three_image_in_styles_l{
+        grid-area: d;
+    }
+    #three_image_in_styles_m{
+        grid-area: e;
+    }
+    #three_image_in_styles_r{
+        grid-area: f;
+    }
+    #styles_articles{
+        display: grid;
+        grid-template-rows: 6;
+            
+    }
+    #row1{
+        grid-gap: 40px;
+        display: grid;
+        grid-template: 
+            '1l 1r';
+    }
+    #row2{
+        grid-gap: 40px;
+        display: grid;
+        grid-template: 
+            '1l 1m 1r';
+    }
+    #row3{
+        grid-gap: 40px;
+        display: grid;
+        grid-template: 
+            '1l 1ml 1rl 1r';
+    }
+    #row4{
+        grid-gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+    }
+    #row5{
+        grid-gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+    }
+    #row6{
+        grid-gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+    }
+    #styles_article_column_1{
+    }
+    #styles_article_column_2{
+    }
+    #styles_article_column_3{
+    }
+    #styles_article_column_4{
+    }
+    #styles_article_column_5{
+    }
+    #styles_article_column_6{
+    }
+    #styles_article_column_7{
+    }
+    #styles_article_column_8{
+    }
+    #styles_article_column_9{
+    }
+    #styles_article_column_10{
+        
+    }
+    #styles_article_column_11{
+        
+    }
+    #styles_article_column_12{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    #styles_article_column_13{
+    }
+    #styles_article_column_14{
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+    #styles_article_column_15{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #styles_article_column_16{
+    }
+
     
 }
 
@@ -508,7 +724,7 @@ body{
     }
     .image_background{
         display:block;
-        height: 100vh;
+        height: 100%;
         width:100%;
         position: absolute;
         z-index: -1;
