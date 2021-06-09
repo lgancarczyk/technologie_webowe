@@ -71,42 +71,63 @@ body{
     transform: scale(1.1) translateX(-25px);
 }
 
+#switch_to_lover{
+    display: none;
+}
+
 
 .lover_to_back{
     position: relative;
     animation: rotate 2s ease-in-out;
     animation-fill-mode: forwards;
+    z-index: 0;
+    transition: z-index;
+    transition-delay: 1s;
 }
 
 @keyframes rotate {
-    50% {transform: scale(1) translateX(+25px) translateZ(-10px);}
-    100% {transform: scale(0.9) translateX(-25px) translateZ(-10px);}
+    0% {transform: scale(1.1) translateX(-25px);}
+    50% {transform: scale(1) translateX(+25px) ;}
+    100% {transform: scale(0.9) translateX(-25px) ;}
 }
 .happy_to_front{
     position: relative;
     animation: rotate1 2s ease-in-out;
     animation-fill-mode: forwards;
+    z-index: 1;
+    transition: z-index;
+    transition-delay: 1s;
+    
 }
 
 @keyframes rotate1 {
-    50% {transform: scale(1) translateX(-25px) translateZ(10px);}
-    100% {transform: scale(1.1) translateX(+25px) translateZ(10px);}
+    0% {transform: scale(0.9) translateX(+25px);}
+    50% {transform: scale(1) translateX(-25px) ;}
+    100% {transform: scale(1.1) translateX(+25px) ;}
 }
 .lover_to_front{
     position: relative;
     animation: rotate2 2s ease-in-out;
     animation-fill-mode: forwards;
+    z-index: 1;
+    transition: z-index;
+    transition-delay: 1s;
 }
 @keyframes rotate2 {
-    50% {transform: scale(1) translateX(+25px) translateZ(+10px);}
-    100% {transform: scale(1.1) translateX(-25px) translateZ(+10px);}
+    0% {transform: scale(0.9) translateX(-25px);}
+    50% {transform: scale(1) translateX(+25px) ;}
+    100% {transform: scale(1.1) translateX(-25px) ;}
 }
 .happy_to_back{
     position: relative;
     animation: rotate3 2s ease-in-out;
     animation-fill-mode: forwards;
+    z-index: 0;
+    transition: z-index;
+    transition-delay: 1s;
 }
 @keyframes rotate3 {
-    50% {transform: scale(1) translateX(-25px) translateZ(-10px);}
-    100% {transform: scale(0.9) translateX(+25px) translateZ(-10px);}
+    0% {transform: scale(1.1) translateX(+25px);}
+    50% {transform: scale(1) translateX(-25px) ;}
+    100% {transform: scale(0.9) translateX(+25px) ;}
 }

@@ -41,8 +41,8 @@
             </div>
         </div>
         <div id="button_div">
-            <button class="przycisk" id="switch_to_lover" >Switch to Sushi Lover's Lunch!</button>
-            <button class="przycisk" id="switch_to_happy" >Switch to Happy Sushi lunch!</button>
+            <button class="przycisk" id="switch_to_lover" >Switch to Sushi Lover's Lunch! ￫</button>
+            <button class="przycisk" id="switch_to_happy" >￩ Switch to Happy Sushi lunch!</button>
 
         </div>
     </div>
@@ -50,29 +50,38 @@
 
         const div_lover = document.querySelector('#sushi_lover');
         const div_happy = document.querySelector('#happy_sushi');
-        div_happy.classList.add('happy_sushi')
-        div_lover.classList.add('sushi_lover')
+
+        div_happy.classList.add("happy_sushi")
+        div_lover.classList.add("sushi_lover")
+
+        
+
 
         const to_happy_btn = document.querySelector('#switch_to_happy');
         const to_lover_btn = document.querySelector('#switch_to_lover');
 
-        to_happy_btn.addEventListener('click',() => {
+        to_happy_btn.addEventListener('click',()=>{
+            document.getElementById("switch_to_happy").style.display = "none";
+            document.getElementById("switch_to_lover").style.display = "flex";
 
-
-            div_lover.classList.add('lover_to_back');
-            div_happy.classList.add('happy_to_front')
-            // await delay(2000);
-            // div_happy.classList.remove('happy_sushi')
-            // div_lover.classList.remove('sushi_lover')
-
+            div_happy.classList.remove("happy_sushi")
+            div_lover.classList.remove("sushi_lover") 
             
+            div_happy.classList.remove("happy_to_back")
+            div_happy.classList.add("happy_to_front")
+
+            div_lover.classList.remove("lover_to_front")
+            div_lover.classList.add("lover_to_back")
         })
-
-        to_lover_btn.addEventListener('click',() => {
-
-            div_lover.classList.add('lover_to_front');
-            div_happy.classList.add('happy_to_back')
+        to_lover_btn.addEventListener('click',()=>{
+            document.getElementById("switch_to_lover").style.display = "none";
+            document.getElementById("switch_to_happy").style.display = "flex";
             
+            div_happy.classList.remove("happy_to_front")
+            div_happy.classList.add("happy_to_back")
+
+            div_lover.classList.remove("lover_to_back")
+            div_lover.classList.add("lover_to_front")
         })
    
         
