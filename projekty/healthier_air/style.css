@@ -1,0 +1,131 @@
+@font-face {
+    font-family: roboto-bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: roboto-black;
+    src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: roboto-bold-italic;
+    src: url(fonts/Roboto-BoldItalic.ttf);
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-medium-italic;
+    src: url(fonts/Roboto-MediumItalic.ttf);
+}
+
+body{
+    margin: 0;
+}
+.main{
+    /* margin: 0 3px 0 3px; */
+    position: relative;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+#logo_image{
+    height: 80px;
+    margin: 5px 0 5px 10px;
+}
+.hamburger_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+.link_in_header{
+    font-family: roboto-medium-italic;
+    font-size: 21px;
+    line-height: 35px;
+    text-decoration: none;
+    padding: 5px 0 5px 10px;
+    color: #777777;
+    transition: color 0.2s ease-in-out;
+    border-top: 1px solid rgba(50, 50, 93, 0.25);
+}
+.link_in_header:hover{
+    color: rgb(78, 78, 78);
+    transition: color 0.2s ease-in-out;
+}
+.hamburger_btn:hover{
+    background-color: rgb(230, 230, 230);
+}
+#hamburger_img{
+    height: 30px;
+}
+
+#header_mobile_links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.header_mobile_links_open{
+    transform: scaleY(1);
+    transition-duration: 0.3s;
+    transform-origin: top;
+}
+.header_mobile_links_closed{
+    transform: scaleY(0);
+    transition-duration: 0.3s;
+    transform-origin: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Content #####################################################
+###############################################################
+###############################################################*/
+
+
+
+
+
+
+
+
+
+/* Footer #####################################################
+###############################################################
+###############################################################*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(50, 50, 93, 0.25);
+    padding: 40px 0 70px;
+    
+}
+
+
+ 
