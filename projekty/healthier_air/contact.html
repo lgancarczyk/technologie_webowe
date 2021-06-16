@@ -20,6 +20,21 @@
             <button class="hamburger_btn">
               <img id="hamburger_img" src="images/hamburger.png" alt="">
             </button>
+            <div class="links_in_header">
+              <a
+                href="home.html"
+                class="link_in_header_desktop "
+                >Strona Głowna</a
+              >
+              <a href="#" class="link_in_header_desktop">O nas</a>
+              <a href="fotowoltaika.html" class="link_in_header_desktop"
+                >Fotowoltaika</a
+              >
+              <a href="#" class="link_in_header_desktop">Pompy ciepła</a>
+              <a href="#" class="link_in_header_desktop">Ładowarkia</a>
+              <a href="#" class="link_in_header_desktop">Promocje</a>
+              <a href="contact.html" class="link_in_header_desktop link_in_header_active">Kontakt</a>
+            </div>
 
           </div>
 
@@ -29,9 +44,9 @@
           <a href="#" class="link_in_header">O nas</a>
           <a href="#" class="link_in_header">Fotowoltaika</a>
           <a href="#" class="link_in_header">Pompy ciepła</a>
-          <a href="#" class="link_in_header">Klimatyzacja</a>
+          <a href="#" class="link_in_header">Ładowarkia</a>
           <a href="#" class="link_in_header">Promocje</a>
-          <a href="contact.html" class="link_in_header">Kontakt</a>
+          <a href="contact.html" class="link_in_header link_in_header_active">Kontakt</a>
         </div>
 
 
@@ -39,43 +54,51 @@
 
 
         <div class="content">
-
-            <h2 id="kontakt_naglowek">Skontaktuj się z nami</h2>
-            <img id="contact_image" src="images/contact_image.png" alt="">
-            <div class="contact_items">
-
-                <div class="contact_item">
-                    <img src="images/icons/phone.png" alt="">
-                    <h4>+48 882 007 512</h4>
-
-                </div>
-                <div class="contact_item">
-                    <img src="images/icons/place.png" alt="">
-                    <h4>Mostki 89 33-340 Stary Sącz</h4>
-                </div>
-                <div class="contact_item">
-                    <img src="images/icons/who.png" alt="">
-                    <h4>Maciej Jop</h4>
-                    
-                </div>
-                <div class="contact_item">
-                    <img src="images/icons/email.png" alt="">
-                    <h4>biuro@healthierair.pl</h4>
-                </div>
+            <div id="contact_text_image">
+              <h2 id="kontakt_naglowek">Skontaktuj się z nami</h2>
+              <img id="contact_image" src="images/contact_image.png" alt="">
             </div>
 
+            <div id="contact_info_and_form">
+              <div class="contact_items" id="contact_items_from_contact">
 
-            <h3 id="form_title">Wypełnij formularz, a odezwiemy się do ciebie.</h3>
-            <form class="contact_form" action="https://formsubmit.co/groza5739@gmail.com" method="POST">
-                <input class="contact_input" type="hidden" name="_next" value="http://127.0.0.1:5500/projekty/healthier_air/home.html">
-                <h5>Telefon:</h5>
-                <input class="contact_input" type="text" name="name" placeholder="Podaj swój numer: np.284146261">
-                <h5>Twój e-mail:</h5>
-                <input class="contact_input" type="email" name="email" placeholder="Podaj swój email:" required>
-                <h5>Wiadomość: (opcjonalnie)</h5>
-                <input class="contact_input" type="text" name="message" placeholder="Write your message:">
-                <button id="form_button" type="submit">Send</button>
-           </form>
+                  <div class="contact_item">
+                      <img src="images/icons/phone.png" alt="">
+                      <h4>+48 882 007 512</h4>
+
+                  </div>
+                  <div class="contact_item">
+                      <img src="images/icons/place.png" alt="">
+                      <h4>Mostki 89 33-340 Stary Sącz</h4>
+                  </div>
+                  <div class="contact_item">
+                      <img src="images/icons/who.png" alt="">
+                      <h4>Maciej Jop</h4>
+                      
+                  </div>
+                  <div class="contact_item">
+                      <img src="images/icons/email.png" alt="">
+                      <h4>biuro@healthierair.pl</h4>
+                  </div>
+                </div>
+
+                <div id="contact_form_contact">
+                  <h3 id="form_title">Wypełnij formularz, a odezwiemy się do ciebie.</h3>
+                  <form class="contact_form" action="https://formsubmit.co/groza5739@gmail.com" method="POST">
+                      <input class="contact_input" type="hidden" name="_next" value="http://127.0.0.1:5500/projekty/healthier_air/home.html">
+                      <h5>Telefon:</h5>
+                      <input class="contact_input" type="text" name="name" placeholder="Podaj swój numer: np.284146261">
+                      <h5>Twój e-mail:</h5>
+                      <input class="contact_input" type="email" name="email" placeholder="Podaj swój email:" required>
+                      <h5>Wiadomość: (opcjonalnie)</h5>
+                      <input class="contact_input" type="text" name="message" placeholder="Write your message:">
+                      <button id="form_button" type="submit">Send</button>
+                  </form>
+                </div>
+                
+            </div>
+              
+            
 
            <iframe id="map" 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10352.247987658217!2d20.594271227297497!3d49.55885337
@@ -98,8 +121,8 @@
 
 
         <div class="footer">
-          <p>stopka
-          </p>
+          <p>Własność Healthier Air.</p>
+          <p class="footer_phone">+48 882 007 512</p>
         </div>
 
     </div>

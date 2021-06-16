@@ -1,121 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selfy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="header_class">
-            <div class="logo_with_links_and_hamburger_class">
-                <a href="index.html" class="logo"><img src="images/logo@2x.png" alt="Selfy"></a>
-                <button class="hamburger_button" ></button>
-                <div class="links_in_menu">
-                    <a class="link_in_nav_menu" href="index.html">Home</a>
-                    <a class="link_in_nav_menu" href="about.html">About</a>
-                    <a class="link_in_nav_menu" href="styles.html">Styles</a>
-                    <a class="link_in_nav_menu nav_link_active" href="gallery.html">Gallery</a>
-                    <a class="link_in_nav_menu" href="blog.html">Blog</a>
-                    <a class="link_in_nav_menu" href="contact.html">Contact</a>
-                </div>
-            </div>
-            <div class="nav_menu_mobile nav_menu_mobile_closed">
-                <a class="link_in_nav_menu" href="index.html">Home</a>
-                <a class="link_in_nav_menu" href="about.html">About</a>
-                <a class="link_in_nav_menu" href="styles.html">Styles</a>
-                <a class="link_in_nav_menu nav_link_active" href="gallery.html">Gallery</a>
-                <a class="link_in_nav_menu" href="blog.html">Blog</a>
-                <a class="link_in_nav_menu" href="contact.html">Contact</a>
-            </div>
-            
+      <div class="logo_with_links_and_hamburger_class">
+        <a href="index.html" class="logo"
+          ><img src="images/logo@2x.png" alt="Selfy"
+        /></a>
+        <button class="hamburger_button"></button>
+        <div class="links_in_menu">
+          <a class="link_in_nav_menu" href="index.html">Home</a>
+          <a class="link_in_nav_menu" href="about.html">About</a>
+          <a class="link_in_nav_menu" href="styles.html">Styles</a>
+          <a class="link_in_nav_menu nav_link_active" href="gallery.html"
+            >Gallery</a
+          >
+          <a class="link_in_nav_menu" href="blog.html">Blog</a>
+          <a class="link_in_nav_menu" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="nav_menu_mobile nav_menu_mobile_closed">
+        <a class="link_in_nav_menu" href="index.html">Home</a>
+        <a class="link_in_nav_menu" href="about.html">About</a>
+        <a class="link_in_nav_menu" href="styles.html">Styles</a>
+        <a class="link_in_nav_menu nav_link_active" href="gallery.html"
+          >Gallery</a
+        >
+        <a class="link_in_nav_menu" href="blog.html">Blog</a>
+        <a class="link_in_nav_menu" href="contact.html">Contact</a>
+      </div>
     </div>
     <div class="main" id="gallery_main">
-        <div class="gallery_part_of_main">
-            <div class="gallery_part_of_main_text_area">
-                <h1 class="title_part_of_main">Gallery Style One</h1>
-                <p class="headers_lower_text">Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.</p>
-                <p class="text_part_of_main">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae quam atque natus 
-                    mollitia hic iusto provident voluptatum, excepturi ipsum consectetur blanditiis praesentium
-                    , obcaecati itaque quas voluptates fugit quasi pariatur beatae repudiandae eum? 
-                    Exercitationem, illum?
-                </p>
-                <p class="link_from_text arrow">See Full Theme Styles</p>
 
-            </div>
-            <div class="gallery_gap_mobile" id="gallery_part_of_main_1_image_area">
-                <img class="white_frame gallery_images_width"  src="images/mock.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock2.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock3.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock4.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock5.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock6.jpg" alt="">
-
-            </div>
-                    
+      <div class="lightbox">
+        <div id="lightbox_image_div">
+          <button id="close_lightbox_btn">
+               X
+          </button>
+          <img  alt="" id="lightbox_image" class="white_frame">
         </div>
-        <div class="gallery_part_of_main">
-            <div class="gallery_part_of_main_text_area">
-                <h1 class="title_part_of_main">Gallery Style Two</h1>
-                <p class="headers_lower_text">Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.</p>
-                <p class="text_part_of_main">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae quam atque natus 
-                    mollitia hic iusto provident voluptatum, excepturi ipsum consectetur blanditiis praesentium
-                    , obcaecati itaque quas voluptates fugit quasi pariatur beatae repudiandae eum? 
-                    Exercitationem, illum?
-                </p>
+          
+      </div>
 
-            </div>
-            <div class="gallery_gap_mobile" id="gallery_part_of_main_2_image_area">
-                <img class="white_frame gallery_images_width" id="big_moc_7_second_gallery_part"  src="images/mock7.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock3.jpg" alt="">
-
-            </div>
-                    
+      <div class="gallery_part_of_main">
+        <div class="gallery_part_of_main_text_area">
+          <h1 class="title_part_of_main">Gallery Style One</h1>
+          <p class="headers_lower_text">
+            Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
+          </p>
+          <p class="text_part_of_main">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quae quam atque natus mollitia hic iusto provident voluptatum,
+            excepturi ipsum consectetur blanditiis praesentium , obcaecati
+            itaque quas voluptates fugit quasi pariatur beatae repudiandae eum?
+            Exercitationem, illum?
+          </p>
+          <p class="link_from_text arrow">See Full Theme Styles</p>
         </div>
-        <div class="gallery_part_of_main" id="last_gallery_part_of_main">
-            <div class="gallery_part_of_main_text_area">
-                <h1 class="title_part_of_main">Gallery Style Three</h1>
-                <p class="headers_lower_text">Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.</p>
-                <p class="text_part_of_main">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae quam atque natus 
-                    mollitia hic iusto provident voluptatum, excepturi ipsum consectetur blanditiis praesentium
-                    , obcaecati itaque quas voluptates fugit quasi pariatur beatae repudiandae eum? 
-                    Exercitationem, illum?
-                </p>
-            </div>
-            <div class="gallery_gap_mobile" id="gallery_part_of_main_3_image_area">
-                <img class="white_frame gallery_images_width"  src="images/mock2.jpg" alt="">
-                <img class="white_frame gallery_images_width"  src="images/mock6.jpg" alt="">
-                
-
-            </div>
-            
-                    
+        <div class="gallery_gap_mobile" id="gallery_part_of_main_1_image_area">
+          <img
+            id="gallery_img_1"
+            class="white_frame gallery_images_width"
+            src="images/mock.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_2"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock2.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_3"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock3.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_4"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock4.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_5"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock5.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_6"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock6.jpg"
+            alt=""
+          />
         </div>
+      </div>
+      <div class="gallery_part_of_main">
+        <div class="gallery_part_of_main_text_area">
+          <h1 class="title_part_of_main">Gallery Style Two</h1>
+          <p class="headers_lower_text">
+            Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
+          </p>
+          <p class="text_part_of_main">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quae quam atque natus mollitia hic iusto provident voluptatum,
+            excepturi ipsum consectetur blanditiis praesentium , obcaecati
+            itaque quas voluptates fugit quasi pariatur beatae repudiandae eum?
+            Exercitationem, illum?
+          </p>
+        </div>
+        <div class="gallery_gap_mobile" id="gallery_part_of_main_2_image_area">
+          <img
+            class="white_frame gallery_images_width img_with_lightbox"
+            id="gallery_img_7"
+            src="images/mock7.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_8"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_9"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock3.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="gallery_part_of_main" id="last_gallery_part_of_main">
+        <div class="gallery_part_of_main_text_area">
+          <h1 class="title_part_of_main">Gallery Style Three</h1>
+          <p class="headers_lower_text">
+            Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
+          </p>
+          <p class="text_part_of_main">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quae quam atque natus mollitia hic iusto provident voluptatum,
+            excepturi ipsum consectetur blanditiis praesentium , obcaecati
+            itaque quas voluptates fugit quasi pariatur beatae repudiandae eum?
+            Exercitationem, illum?
+          </p>
+        </div>
+        <div class="gallery_gap_mobile" id="gallery_part_of_main_3_image_area">
+          <img
+            id="gallery_img_10"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock2.jpg"
+            alt=""
+          />
+          <img
+            id="gallery_img_11"
+            class="white_frame gallery_images_width img_with_lightbox"
+            src="images/mock6.jpg"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
     <div class="footer">
-        <div class="logo_links_footer">
-            <a href="#"><img src="images/icon-facebook@2x.png" alt="F"></a>
-            <a href="#"><img src="images/icon-twitter@2x.png" alt="T"></a>
-            <a href="#"><img src="images/icon-linkedin@2x.png" alt="L"></a>
-        </div>
-        <div class="selfy_copyright">
-            <a href="index.html"><img src="images/logo-foot@2x.png" alt="Selfy"></a>
-            <p>© Copyright Selfy 2013</p>
-        </div>
+      <div class="logo_links_footer">
+        <a href="#"><img src="images/icon-facebook@2x.png" alt="F" /></a>
+        <a href="#"><img src="images/icon-twitter@2x.png" alt="T" /></a>
+        <a href="#"><img src="images/icon-linkedin@2x.png" alt="L" /></a>
+      </div>
+      <div class="selfy_copyright">
+        <a href="index.html"
+          ><img src="images/logo-foot@2x.png" alt="Selfy"
+        /></a>
+        <p>© Copyright Selfy 2013</p>
+      </div>
     </div>
-    <script type="text/javascript">
-        const hamburger_button = document.querySelector('.hamburger_button');
-        const my_links_id = document.querySelector('.nav_menu_mobile')
-
-        hamburger_button.addEventListener('click',()=>{
-            my_links_id.classList.toggle('nav_menu_mobile_closed')
-            my_links_id.classList.toggle('nav_menu_mobile_open')
-        })
-    </script>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
