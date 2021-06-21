@@ -283,10 +283,18 @@ body{
     box-sizing: border-box;
     background-color: #fff;
     z-index: 10;
-    position: fixed;
-    width:inherit;
-    max-width:inherit;
+    width:100vw;
 
+}
+.header_bg{
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    z-index: 6;
+    background-color: #fff;
+    height:max-content;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -403,7 +411,11 @@ body{
     position: relative;
     padding: 40px 10px 40px 10px;
     min-height: 100vh;
-    padding-top: 150px;
+    padding-top: 130px;
+}
+.page_title{
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 
@@ -427,6 +439,7 @@ body{
 .plusy #home_komfort{
     position: relative;
     bottom: -30px;
+    margin-bottom: 40px;
 }
 
 .plusy .plusy_grid_section{
@@ -438,11 +451,19 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    transition: top 0.2s ease-in-out;
+    position: relative;
+    top: 0;
+}
+.plusy_part:hover{
+    position: relative;
+    top: -5px;
+    transition: top 0.2s ease-in-out;
 }
 
 .plusy .plusy_part img{
     margin: auto;
-    width: 80px;
+    height: 80px;
     margin-top: 13.5px;
     margin-bottom: 0;
     padding-bottom: 20px;
@@ -486,6 +507,11 @@ body{
 }
 .wspolpraca h2{
     margin-bottom: 20px;
+
+}
+#proces_wspolpracy{
+    text-align: center;
+    margin-bottom: 60px;
 }
 .wspolpraca_grid_template{
     display: grid;
@@ -495,9 +521,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+}
+.wspolpraca_part:hover{
+    position: relative;
+    top: -5px;
+    transition: top 0.2s ease-in-out;
 }
 .wspolpraca_part img{
-    width: 80px;
+    height: 80px;
     
 }
 .wspolpraca_part h1{
@@ -506,6 +540,49 @@ body{
 .upper_page_image_class{
     height: 200px;
     object-fit:cover
+}
+
+#licznik_button{
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #cad2d7
+}
+#licznik_button .text_with_button_audit{
+    border: none;
+}
+
+#jakosc_home{
+    display: grid;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #cad2d7
+
+}
+#jakosc_text_button{
+    margin-top: 30px;
+    text-align: justify;
+}
+#dowiedz_sie_wiecej_btn{
+    display: flex;
+    width: max-content;
+    text-decoration: none;
+    font-family: roboto-black;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    background-color: #ffc000;
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#dowiedz_sie_wiecej_btn:hover{
+    background-color: #dba400;
+    transition: background-color 0.2s ease-in-out;
 }
 
 
@@ -596,8 +673,10 @@ body{
     text-align: center;
     margin-top: 40px;
 }
+
 #plusy_part_img_real{
     width: 100%;
+    height: min-content;
     border: 4px solid #fff;
     padding: 0;
     margin-bottom: 30px;
@@ -646,6 +725,9 @@ body{
     margin-top: 50px;
 }
 
+
+
+/* car_chargers ########################################### */
 
 
 
@@ -765,6 +847,9 @@ margin: 40px 0 60px 0;
         height: 300px;
         object-fit:cover
     }
+    #licznik_button{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
@@ -775,10 +860,18 @@ margin: 40px 0 60px 0;
     .main{
         max-width: 70vw;
     }
+    .header{
+        width: 70vw;
+        
+    }
     
-    #plusy_grid_section{
+    .plusy_grid_section{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+    .wspolpraca_grid_template{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 30px;
     }
     .cechy{
@@ -788,6 +881,11 @@ margin: 40px 0 60px 0;
     .image_with_text_side_or_down{
         grid-template-columns: 60% 1fr;
         column-gap: 40px;
+    }
+    #jakosc_home{
+        grid-template-columns: 60% 1fr;
+        column-gap: 30px;
+        text-align: justify;
     }
 }
 
@@ -815,6 +913,7 @@ margin: 40px 0 60px 0;
         grid-column: 1;
         grid-row: 1;
     }
+    
 }
 
 @media screen and (min-width:1550px){

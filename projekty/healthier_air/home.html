@@ -10,30 +10,36 @@
   </head>
   <body>
     <div class="main">
-      <div class="header">
-        <div class="header_image_section">
-          <a href="home.html">
-            <img id="logo_image" src="images/logo.jpg" alt=""
-          /></a>
-        </div>
-        <div class="header_links_section">
-          <button class="hamburger_btn">
-            <img id="hamburger_img" src="images/hamburger.png" alt="" />
-          </button>
-          <div class="links_in_header">
-            <a
-              href="home.html"
-              class="link_in_header_desktop link_in_header_active"
-              >Strona Głowna</a
-            >
-            <a href="#" class="link_in_header_desktop">O nas</a>
-            <a href="fotowoltaika.html" class="link_in_header_desktop"
-              >Fotowoltaika</a
-            >
-            <a href="#" class="link_in_header_desktop">Pompy ciepła</a>
-            <a href="#" class="link_in_header_desktop">Ładowarki</a>
-            <a href="#" class="link_in_header_desktop">Promocje</a>
-            <a href="contact.html" class="link_in_header_desktop">Kontakt</a>
+      <div class="header_bg">
+        <div class="header">
+          <div class="header_image_section">
+            <a href="home.html">
+              <img id="logo_image" src="images/logo.jpg" alt=""
+            /></a>
+          </div>
+          <div class="header_links_section">
+            <button class="hamburger_btn">
+              <img id="hamburger_img" src="images/hamburger.png" alt="" />
+            </button>
+            <div class="links_in_header">
+              <a
+                href="home.html"
+                class="link_in_header_desktop link_in_header_active"
+                >Strona Głowna</a
+              >
+              <a href="about.html" class="link_in_header_desktop">O nas</a>
+              <a href="fotowoltaika.html" class="link_in_header_desktop"
+                >Fotowoltaika</a
+              >
+              <a href="heatpump.html" class="link_in_header_desktop"
+                >Pompy ciepła</a
+              >
+              <a href="charger.html" class="link_in_header_desktop"
+                >Ładowarkia</a
+              >
+              <a href="#" class="link_in_header_desktop">Promocje</a>
+              <a href="contact.html" class="link_in_header_desktop">Kontakt</a>
+            </div>
           </div>
         </div>
       </div>
@@ -49,57 +55,26 @@
         <a href="contact.html" class="link_in_header">Kontakt</a>
       </div>
 
-      <div class="img-slider">
-        <div class="slide active">
-          <img src="images/home_images/solar.jpg" alt="" />
-          <div class="info">
-            <h2>Fotowoltaika</h2>
-            <a href="#"><p>Dowiedz się więcej.</p></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="images/home_images/money.jpg" alt="" />
-          <div class="info">
-            <h2>Inwestycja</h2>
-            <a href="#"><p>Dowiedz się więcej.</p></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="images/home_images/vent.jpg" alt="" />
-          <div class="info">
-            <h2>Klimatyzacja</h2>
-            <a href="#"><p>Dowiedz się więcej.</p></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="images/home_images/car.jpg" alt="" />
-          <div class="info">
-            <h2>Ładowarki</h2>
-            <a href="#"><p>Dowiedz się więcej.</p></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="images/home_images/stars.jpg" alt="" />
-          <div class="info">
-            <h2>Najlepsze Oceny</h2>
-            <a href="#"><p>Dowiedz się więcej.</p></a>
-          </div>
-        </div>
-        <img id="white" src="images/home_images//white.jpg" alt="" />
-        <div class="navigation">
-          <div class="btn active"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-        </div>
-      </div>
-
       <div class="content">
-        <div class="licznik">
-          <img src="images/icons/gears.png" alt="" />
-          <h3 id="liczba_instalacji_text">Nasze instalacje</h3>
-          <h3 id="liczba_instalacji">0</h3>
+        <h2 class="page_title">W trosce o ciebie i nasze środowisko</h2>
+        <img
+          class="image_border upper_page_image_class"
+          id="wide_home_img"
+          src="images/home_images/wide_home_img.jpg"
+          alt=""
+        />
+
+        <div id="licznik_button">
+          <div class="licznik">
+            <img src="images/icons/gears.png" alt="" />
+            <h3 id="liczba_instalacji_text">Nasze instalacje</h3>
+            <h3 id="liczba_instalacji">0</h3>
+          </div>
+          <div class="text_with_button_audit">
+            <p></p>
+            <h5>Już dziś dołącz do naszych zadowolonych klientów</h5>
+            <a class="audit_btn" href="#">Zamów bezpłatny audyt</a>
+          </div>
         </div>
 
         <div class="plusy">
@@ -134,18 +109,29 @@
           </div>
         </div>
 
-        <div class="postaw_na_jakosc image_border">
-          <h2>Postaw na jakość</h2>
-          <img
-            class=""
-            id="home_jakosc_img"
-            src="images/home_images/quality_big.png"
-            alt=""
-          />
+        <div id="jakosc_home">
+          <div class="postaw_na_jakosc image_border">
+            <h2>Postaw na jakość</h2>
+            <img
+              class=""
+              id="home_jakosc_img"
+              src="images/home_images/quality_big.png"
+              alt=""
+            />
+          </div>
+          <div id="jakosc_text_button">
+            <p>
+              Jesteśmy prężnie rozwijającą sie firmą, która na pierwszym miejscu
+              stawia poprawnośc wykonywanej usługi i zadowolenie naszych
+              klientów, wykorzystując przy tym sprzęty najlepszych marek
+              dostępnych na rynku.
+            </p>
+            <a id="dowiedz_sie_wiecej_btn" href="about.html">Dowiedz się więcej</a>
+          </div>
         </div>
 
         <div class="wspolpraca">
-          <h2>Proces współpracy</h2>
+          <h2 id="proces_wspolpracy">Proces współpracy</h2>
           <div class="wspolpraca_grid_template">
             <div class="wspolpraca_part">
               <img src="images/icons/client.png" alt="" />
