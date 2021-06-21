@@ -308,7 +308,7 @@ body{
     justify-content: center;
     align-items: center;
     border: none;
-    background-color: #f3f4f5;
+    background-color: #fff;
     height: 60px;
     width: 60px;
     margin-right: 10px;
@@ -427,7 +427,6 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    margin-bottom: 40px;
     border-bottom: 1px solid #cad2d7;
     padding-bottom: 40px;
 }
@@ -625,7 +624,7 @@ body{
     transition: background-color 0.2s ease-in-out;
 }
 
-.fotowoltaika_plusy_text{
+#fotowoltaika_plusy .fotowoltaika_plusy_text{
     text-align: center;
 }
 .text_with_button_audit{
@@ -648,12 +647,49 @@ body{
     display: grid;
     grid-template-rows: auto;
     row-gap: 40px;
+    margin-top: 50px;
 }
 .cechy .cecha h4{
 }
 .cechy .cecha p{
     margin-top: 5px;
     text-align: justify;
+}
+
+#money_image_with_text{
+
+}
+#money_image_with_text img{
+    width: 100%;
+}
+.sales{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #cad2d7;
+    margin-top: 40px;
+
+}
+.sales_grid{
+    display: grid;
+}
+.sales h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sales p{
+    text-align: justify;
+}
+.link_to_gov{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #003561;
+    font-style: italic;
+    transition: color 0.2s ease-in-out;
+}
+.link_to_gov:hover{
+    color: #3e96df;
+    transition: color 0.2s ease-in-out;
 }
 
 
@@ -797,6 +833,15 @@ margin: 40px 0 60px 0;
     height: 50px;
     border: none;
 }
+#agreement{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+#agreement_checkbox{
+    transform: scale(1.3);
+    justify-content: center;
+}
 
 #map {
     margin-top: 40px;
@@ -913,16 +958,21 @@ margin: 40px 0 60px 0;
         grid-column: 1;
         grid-row: 1;
     }
-    
-}
-
-@media screen and (min-width:1550px){
     .hamburger_btn{
         display: none;
     }
     .links_in_header{
         display: flex;
     }
+    .sales_grid{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+    
+}
+
+@media screen and (min-width:1550px){
+    
     .upper_page_image_class{
         height: 400px;
         object-fit:cover

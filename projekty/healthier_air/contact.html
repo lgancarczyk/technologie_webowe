@@ -34,7 +34,6 @@
               >
               <a href="heatpump.html" class="link_in_header_desktop">Pompy ciepła</a>
               <a href="charger.html" class="link_in_header_desktop">Ładowarkia</a>
-              <a href="#" class="link_in_header_desktop">Promocje</a>
               <a href="contact.html" class="link_in_header_desktop link_in_header_active">Kontakt</a>
             </div>
 
@@ -43,15 +42,14 @@
         </div>
       </div>
         
-        <div id="header_mobile_links" class="header_mobile_links_closed">
-          <a href="home.html" class="link_in_header">Strona Głowna</a>
-          <a href="#" class="link_in_header">O nas</a>
-          <a href="#" class="link_in_header">Fotowoltaika</a>
-          <a href="#" class="link_in_header">Pompy ciepła</a>
-          <a href="#" class="link_in_header">Ładowarkia</a>
-          <a href="#" class="link_in_header">Promocje</a>
-          <a href="contact.html" class="link_in_header link_in_header_active">Kontakt</a>
-        </div>
+      <div id="header_mobile_links" class="header_mobile_links_closed">
+        <a href="home.html" class="link_in_header">Strona Głowna</a>
+        <a href="about.html" class="link_in_header">O nas</a>
+        <a href="fotowoltaika.html" class="link_in_header">Fotowoltaika</a>
+        <a href="heatpump.html" class="link_in_header">Pompy ciepła</a>
+        <a href="charger.html" class="link_in_header">Ładowarki</a>
+        <a href="contact.html" class="link_in_header link_in_header_active">Kontakt</a>
+      </div>
 
 
 
@@ -91,11 +89,17 @@
                   <form class="contact_form" action="https://formsubmit.co/groza5739@gmail.com" method="POST">
                       <input class="contact_input" type="hidden" name="_next" value="http://127.0.0.1:5500/projekty/healthier_air/home.html">
                       <h5>Telefon:</h5>
-                      <input class="contact_input" type="text" name="name" placeholder="Podaj swój numer: np.284146261">
+                      <input class="contact_input" type="tel" name="tel" placeholder="Podaj swój numer: np.284146261">
                       <h5>Twój e-mail:</h5>
                       <input class="contact_input" type="email" name="email" placeholder="Podaj swój email:" required>
                       <h5>Wiadomość: (opcjonalnie)</h5>
                       <input class="contact_input" type="text" name="message" placeholder="Write your message:">
+                      
+                      <div id="agreement">
+                        <input id="agreement_checkbox" type="checkbox"  required></input>
+                        <h3>Wyrażam zgodę na przetwarzanie moich danych osobowych, oraz na kontakt telefoniczny, bądź mailowy ze strony HealthierAir</h3>
+                      </div>
+
                       <button id="form_button" type="submit">Send</button>
                   </form>
                 </div>
