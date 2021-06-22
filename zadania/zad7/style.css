@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: aleo-italic;
-  src: url(fonts/aleo-italic-webfont\\(1\).woff);
+  src: url(fonts/aleo-italic-webfont.woff);
 }
 @font-face {
   font-family: roboto-bold;
@@ -316,6 +316,7 @@ h6 {
   padding-bottom: 20px;
   border-bottom: solid 1px #cad2d7;
   margin-bottom: 10px;
+  
 }
 .contact_right_side_upper {
   padding-bottom: 20px;
@@ -493,8 +494,12 @@ fieldset {
 
 
 
-
-
+#post_title{
+  margin: 0;
+}
+#post_under_title{
+  margin: 0;
+}
 
 
 /* lightbox */
@@ -528,9 +533,7 @@ fieldset {
   position: absolute;
   right: 0;
   border-radius: 10px;
-  background-color: burlywood;
-  dis
-
+  background-color: rgb(163, 144, 118);
 }
 
 .img_with_lightbox{
@@ -634,6 +637,9 @@ fieldset {
   #contact_main {
     grid-template-columns: 1fr 30%;
   }
+  #post_main{
+    grid-template-columns: 1fr 30%;
+  }
 
   #contact_right_side_inside_div {
     padding-left: 40px;
@@ -645,6 +651,7 @@ fieldset {
   }
   .contact_left_side {
     border-bottom: none;
+    margin-right: 50px;
   }
   #images_in_styles {
     display: grid;
@@ -743,6 +750,19 @@ fieldset {
     grid-column-end: 4;
   }
   #styles_article_column_16 {
+  }
+
+
+  #grid_in_post{
+    
+  }
+  #grid_in_post_img_with_desc{
+    float: right;
+    width: 50%;
+    
+  }
+  #grid_in_post_p{
+    
   }
 }
 
