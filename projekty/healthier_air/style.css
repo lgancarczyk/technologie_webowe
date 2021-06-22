@@ -766,6 +766,22 @@ body{
 /* car_chargers ########################################### */
 
 
+#charger_foto_and_text{
+    margin-top: 40px;
+}
+#charger_foto_and_text h2{
+    text-align: center;
+}
+#charger_foto_and_text_grid{
+    margin-top: 20px;
+    display: grid;
+    row-gap: 30px;
+}
+#charger_foto_and_text_grid p{
+ text-align: justify;
+}
+
+
 
 
 
@@ -966,6 +982,11 @@ margin: 40px 0 60px 0;
     }
     .sales_grid{
         grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+    #charger_foto_and_text_grid{
+        display: grid;
+        grid-template-columns: 40% 1fr;
         column-gap: 30px;
     }
     
